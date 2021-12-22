@@ -90,4 +90,16 @@
       </div>
     </div>
   </body>
+  <script>
+    window.onload = () => {  
+    let priceElements = document.getElementsByClassName("price hot");
+    for(let element of priceElements){
+     // let newElement = document.createTextNode("🔥");
+      let price = element.innerHTML;
+      element.innerHTML = price + "🔥";
+      //element.parentNode.insertBefore(newElement, element.nextSibling)
+
+    }
+    };
+    </script>
 </html>
